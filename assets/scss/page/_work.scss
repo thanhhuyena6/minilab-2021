@@ -1,0 +1,22 @@
+.work {
+  .container {
+    @include flex;
+    justify-content: space-between;
+    .work__video {
+      position: relative;
+      img {
+        display: block;
+      }
+      .work__plays {
+        @include center-inside-element();
+        .work__arrow {
+          @include center-inside-element();
+          z-index: -1;
+        }
+      }
+    }
+    .work__content {
+      width: 50%;
+    }
+  }
+}

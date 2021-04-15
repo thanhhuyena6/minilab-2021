@@ -1,4 +1,5 @@
 a {
+  text-decoration: none;
   &:hover {
     text-decoration: none;
   }
@@ -7,6 +8,9 @@ a {
 ul, ol, p {
   padding: 0;
   margin: 0;
+}
+ul{
+  list-style: none;
 }
 
 h1, h2, h3, h4, h5 {
@@ -19,4 +23,33 @@ h1, h2, h3, h4, h5 {
 
 img {
   max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.button {
+  width: auto;
+  border: none;
+  padding: 15px 60px;
+  line-height: 1;
+  color: $color-default-lightest;
+  background-image: linear-gradient(to right,$background-button-start, $background-button-end);
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  &:hover, &:focus {
+    outline: none;
+  }
+}
+
+.sticky {
+  background: $color-default-dark;
+  opacity: 0.8;
+  top: 0;
+  padding: 20px 0;
 }

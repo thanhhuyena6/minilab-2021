@@ -5,13 +5,13 @@
 // Default
 $color-default: #f2f2f2;
 $color-default-lightest: #fff;
-$color-default-lighter: #c2c2c2;
+$color-default-lighter: #717171;
 $color-default-darker: #acacac;
 $color-default-darkest: #000;
-$color-default-dark: #111111;
+$color-default-dark: #8b8b8b;
 
 // Primary colors
-$color-primary: #EE295F;
+$color-primary: #717171;
 
 // Success colors
 $color-success: #00a849;
@@ -20,13 +20,16 @@ $color-success: #00a849;
 $color-warning: #ffc700;
 
 // Danger
-$color-danger: #f54747;
+$color-danger: #ffdcc4;
 
 //colors
 $whiteish: #f2f2f2;
 $pink: #E96F92;
 $purple: #75517D;
 $green: #54fad4;
+$background-menu: #ff706e;
+$background-button-start: #ffc371;
+$background-button-end: #ff5f6d;
 
 //options
 $duration: 0.8s;
@@ -46,9 +49,13 @@ $hsize: $size/2;
 //$info-phone-horizontal: "only screen and (max-width : 767px)";
 //$info-phone: "only screen and (max-width : 640px)";
 
-$info-tablet-horizontal: "only screen and (max-width : 1160px)";
-$info-tablet-vertical: "only screen and (max-width : 900px)";
-$info-phone: "only screen and (max-width : 767px)";
+$info-laptop-large: "only screen and (max-width : 1300px)";
+$info-laptop-small: "only screen and (max-width : 1200px)";
+$info-tablet-horizontal: "only screen and (max-width : 1024px)";
+$info-tablet-vertical: "only screen and (max-width : 960px)";
+$info-phone: "only screen and (max-width : 768px)";
+$info-phone-horizontal: "only screen and (max-width : 660px)";
+$info-phone-vertical: "only screen and (max-width : 480px)";
 $info-phone-4: "only screen and (max-width : 320px)";
 
 $primary-green: #0eb493;

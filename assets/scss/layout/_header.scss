@@ -1,8 +1,123 @@
-.nav {
-  @media #{$info-phone} {
+header {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  transition: all .3s ease-in-out;
+  .container {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
 
-  }
-  @media screen and (max-width: 767px){
+    h1 {
+      a {
+        display: block;
+        img {
+          display: block;
+        }
+      }
+    }
 
+    .nav {
+      @include flex;
+      transition: all .3s ease-in-out;
+      a {
+        padding: 0 25px;
+        color: $color-default-lightest;
+        font-weight: 500;
+        display: block;
+        transition: all .3s ease;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding: 0;
+          display: flex;
+        }
+
+        img {
+          margin: auto 0;
+          display: block;
+          transition: all .3s ease;
+        }
+
+        &:hover {
+          color: $color-default-darkest;
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+      @media #{$info-phone}{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 69px;
+        display: flex;
+        flex-direction: column;
+        width: 0;
+        z-index: 2;
+        transition: all .5s ease;
+      }
+    }
+
+    @media #{$info-phone} {
+      .nav-active {
+        background: $background-menu;
+        width: 50%;
+        max-width: 350px;
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        &:before {
+          display: none;
+        }
+        & a, & a:last-child {
+          padding: 15px;
+        }
+      }
+    }
+    @media #{$info-phone-vertical} {
+      .nav-active {
+        max-width: unset;
+      }
+    }
+
+    .burger {
+      display: none;
+      @media #{$info-phone}{
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+    }
   }
+
+  @media #{$info-phone}{
+    top: 20px;
+  }
+
+}
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
