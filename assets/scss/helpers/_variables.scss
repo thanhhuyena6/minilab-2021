@@ -49,12 +49,14 @@ $hsize: $size/2;
 //$info-phone-horizontal: "only screen and (max-width : 767px)";
 //$info-phone: "only screen and (max-width : 640px)";
 
+$info-laptop-extra-large: "only screen and (max-width : 1370px)";
 $info-laptop-large: "only screen and (max-width : 1300px)";
 $info-laptop-small: "only screen and (max-width : 1200px)";
 $info-tablet-horizontal: "only screen and (max-width : 1024px)";
 $info-tablet-vertical: "only screen and (max-width : 960px)";
 $info-phone: "only screen and (max-width : 768px)";
 $info-phone-horizontal: "only screen and (max-width : 660px)";
+$info-phone-small: "only screen and (max-width : 530px)";
 $info-phone-vertical: "only screen and (max-width : 480px)";
 $info-phone-4: "only screen and (max-width : 320px)";
 

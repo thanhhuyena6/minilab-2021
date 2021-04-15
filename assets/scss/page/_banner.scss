@@ -13,7 +13,7 @@
     height: 600px;
   }
   @media #{$info-phone-vertical} {
-    margin-bottom: 280px;
+    margin-bottom: 320px;
   }
   .banner-background {
     position: relative;
@@ -57,12 +57,14 @@
       .banner-content {
         width: 55%;
         position: relative;
+        padding-right: 40px;
         @media #{$info-phone-vertical} {
           width: 100%;
           order: 2;
           @include flex;
           flex-direction: column;
           align-items: center;
+          padding-right: 0;
         }
         h2, h3 {
           font-size: 80px;
@@ -91,10 +93,14 @@
           }
         }
         p {
-          @include font-size(24px);
+          font-size: 23px;
+          padding-right: 130px;
           font-weight: 300;
           color: $color-primary;
           margin-bottom: 40px;
+          @media #{$info-tablet-horizontal} {
+            padding-right: 0;
+          }
           @media #{$info-phone-vertical} {
             text-align: center;
             margin-bottom: 20px;

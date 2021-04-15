@@ -1,6 +1,15 @@
 .marketing {
   position: relative;
-  margin-bottom: 245px;
+  margin-bottom: 135px;
+  @media #{$info-tablet-vertical} {
+    overflow: hidden;
+  }
+  @media #{$info-tablet-horizontal} {
+    margin-bottom: 60px;
+  }
+  @media #{$info-phone} {
+    margin-bottom: 40px;
+  }
 
   .container {
     position: relative;
@@ -22,7 +31,7 @@
       }
 
       @media #{$info-phone} {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
       }
     }
 

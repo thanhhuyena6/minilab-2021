@@ -1,22 +1,123 @@
 .work {
+  position: relative;
+  @media #{$info-laptop-large} {
+    overflow: hidden;
+  }
   .container {
+    position: relative;
+    padding-top: 110px;
     @include flex;
     justify-content: space-between;
+    align-items: center;
+    @media #{$info-phone-small} {
+      flex-wrap: wrap;
+    }
+    @media #{$info-phone} {
+      padding-top: 60px;
+    }
     .work__video {
       position: relative;
+      margin-left: 45px;
+      box-shadow: 15px 0 82px rgba(180, 180, 180, 0.25);
+      @media #{$info-tablet-horizontal} {
+        margin-left: 0;
+        width: 50%;
+      }
+
+      @media #{$info-phone-small} {
+        width: 100%;
+        margin-bottom: 20px;
+      }
       img {
         display: block;
       }
       .work__plays {
+        width: 150px;
+        height: 150px;
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
         @include center-inside-element();
-        .work__arrow {
-          @include center-inside-element();
-          z-index: -1;
+        background-image: linear-gradient(to bottom right, $background-button-end, $background-button-start);
+        a {
+          display: block;
+          i {
+            color: $color-default-lightest;
+            &:before {
+              font-size: 58px;
+            }
+          }
         }
       }
     }
     .work__content {
-      width: 50%;
+      width: 38%;
+      padding-left: 20px;
+      margin-right: 100px;
+
+      @media #{$info-tablet-horizontal} {
+        margin-right: 0;
+        width: 50%;
+        padding-left: 40px;
+      }
+
+      @media #{$info-phone-small} {
+        width: 100%;
+        padding-left: 0;
+      }
+
+      h2 {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        @media #{$info-tablet-horizontal} {
+          @include font-size(40px);
+        }
+        @media #{$info-phone} {
+          margin-bottom: 20px;
+        }
+      }
+      p {
+        color: $color-default-lighter;
+        margin-bottom: 40px;
+        @media #{$info-phone} {
+          margin-bottom: 20px;
+        }
+      }
+      button {
+        padding: 15px 45px;
+      }
+    }
+    .work__image {
+      position: absolute;
+    }
+    .image-1 {
+      top: 0;
+      left: -35px;
+    }
+    .image-2 {
+      transform: rotate(-5deg);
+      right: -4px;
+      bottom: -40px;
+      @media #{$info-laptop-large} {
+        bottom: 0;
+      }
+      @media #{$info-tablet-horizontal} {
+        right: -45px;
+      }
+    }
+  }
+  .work__bg-image {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -220px;
+    @media #{$info-laptop-extra-large} {
+      bottom: 75px;
+    }
+    @media #{$info-tablet-horizontal} {
+      right: -80px;
     }
   }
 }

@@ -23,32 +23,32 @@ header {
       @include flex;
       transition: all .3s ease-in-out;
       a {
-        padding: 0 25px;
+        margin: 0 25px;
         color: $color-default-lightest;
         font-weight: 500;
         display: block;
         transition: all .3s ease;
 
         &:first-child {
-          padding-left: 0;
+          margin-left: 0;
         }
 
         &:last-child {
-          padding: 0;
+          margin: 0;
           display: flex;
         }
 
-        img {
+        i {
           margin: auto 0;
           display: block;
-          transition: all .3s ease;
+          font-weight: 500;
+          &:before {
+            font-size: 14px;
+          }
         }
 
         &:hover {
           color: $color-default-darkest;
-          img {
-            transform: scale(1.2);
-          }
         }
       }
       @media #{$info-phone}{
