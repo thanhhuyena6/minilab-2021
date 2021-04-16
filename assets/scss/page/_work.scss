@@ -1,7 +1,14 @@
 .work {
   position: relative;
+  margin-bottom: 250px;
   @media #{$info-laptop-large} {
     overflow: hidden;
+  }
+  @media #{$info-tablet-horizontal} {
+    margin-bottom: 100px;
+  }
+  @media #{$info-phone} {
+    margin-bottom: 60px;
   }
   .container {
     position: relative;
@@ -65,7 +72,9 @@
       @media #{$info-phone-small} {
         width: 100%;
         padding-left: 0;
+        text-align: center;
       }
+
 
       h2 {
         font-size: 60px;

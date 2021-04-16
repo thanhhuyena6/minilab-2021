@@ -21,20 +21,27 @@ header {
 
     .nav {
       @include flex;
+      max-width: 525px;
       transition: all .3s ease-in-out;
       a {
         margin: 0 25px;
+        font-size: 17px;
         color: $color-default-lightest;
         font-weight: 500;
         display: block;
         transition: all .3s ease;
+
+        @media #{$info-phone} {
+          margin: 0;
+        }
 
         &:first-child {
           margin-left: 0;
         }
 
         &:last-child {
-          margin: 0;
+          margin-right: 0;
+          margin-left: 20px;
           display: flex;
         }
 
@@ -66,7 +73,7 @@ header {
 
     @media #{$info-phone} {
       .nav-active {
-        background: $background-menu;
+        background: $color-default-lighter;
         width: 50%;
         max-width: 350px;
         @include flex;

@@ -5363,7 +5363,7 @@ img {
     outline: none; }
 
 .sticky {
-  background: #8b8b8b;
+  background: #717171;
   opacity: 0.8;
   top: 0;
   padding: 20px 0; }
@@ -5391,17 +5391,23 @@ header {
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      max-width: 525px;
       transition: all .3s ease-in-out; }
       header .container .nav a {
         margin: 0 25px;
+        font-size: 17px;
         color: #fff;
         font-weight: 500;
         display: block;
         transition: all .3s ease; }
+        @media only screen and (max-width: 768px) {
+          header .container .nav a {
+            margin: 0; } }
         header .container .nav a:first-child {
           margin-left: 0; }
         header .container .nav a:last-child {
-          margin: 0;
+          margin-right: 0;
+          margin-left: 20px;
           display: flex; }
         header .container .nav a i {
           margin: auto 0;
@@ -5424,7 +5430,7 @@ header {
           transition: all .5s ease; } }
     @media only screen and (max-width: 768px) {
       header .container .nav-active {
-        background: #ff706e;
+        background: #717171;
         width: 50%;
         max-width: 350px;
         display: -moz-box;
@@ -5485,7 +5491,7 @@ header {
   .banner .banner-background {
     position: relative; }
     .banner .banner-background img {
-      display: inline-block;
+      display: block;
       position: absolute;
       top: 0;
       right: 0;
@@ -5578,10 +5584,18 @@ header {
           position: absolute; }
           .banner .container .banner-item .banner-content img:first-child {
             right: 100%;
-            bottom: 116%; }
+            bottom: 97%; }
+            @media only screen and (max-width: 660px) {
+              .banner .container .banner-item .banner-content img:first-child {
+                bottom: 104%; } }
           .banner .container .banner-item .banner-content img:nth-child(2) {
             left: 0;
             bottom: 109%; }
+            @media only screen and (max-width: 660px) {
+              .banner .container .banner-item .banner-content img:nth-child(2) {
+                bottom: 85%;
+                left: unset;
+                right: 100%; } }
       .banner .container .banner-item .banner-image {
         width: 45%; }
         @media only screen and (max-width: 480px) {
@@ -5727,10 +5741,17 @@ header {
         left: -100px; } }
 
 .work {
-  position: relative; }
+  position: relative;
+  margin-bottom: 250px; }
   @media only screen and (max-width: 1300px) {
     .work {
       overflow: hidden; } }
+  @media only screen and (max-width: 1024px) {
+    .work {
+      margin-bottom: 100px; } }
+  @media only screen and (max-width: 768px) {
+    .work {
+      margin-bottom: 60px; } }
   .work .container {
     position: relative;
     padding-top: 110px;
@@ -5798,7 +5819,8 @@ header {
       @media only screen and (max-width: 530px) {
         .work .container .work__content {
           width: 100%;
-          padding-left: 0; } }
+          padding-left: 0;
+          text-align: center; } }
       .work .container .work__content h2 {
         font-size: 60px;
         font-weight: 700;
@@ -5844,5 +5866,121 @@ header {
     @media only screen and (max-width: 1024px) {
       .work .work__bg-image {
         right: -80px; } }
+
+.clients {
+  overflow: hidden; }
+  .clients h2 {
+    margin: 0 auto 150px;
+    max-width: 775px;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center; }
+    @media only screen and (max-width: 1024px) {
+      .clients h2 {
+        margin-bottom: 100px; } }
+    @media only screen and (max-width: 768px) {
+      .clients h2 {
+        margin-bottom: 40px;
+        font-size: 40px; } }
+    @media only screen and (max-width: 480px) {
+      .clients h2 {
+        font-size: 30px; } }
+  .clients .clients__content {
+    position: relative;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    @media only screen and (max-width: 960px) {
+      .clients .clients__content {
+        flex-wrap: wrap; } }
+    .clients .clients__content .clients__description {
+      width: 39%;
+      padding-top: 40px; }
+      @media only screen and (max-width: 1200px) {
+        .clients .clients__content .clients__description {
+          width: 30%; } }
+      @media only screen and (max-width: 960px) {
+        .clients .clients__content .clients__description {
+          width: 100%;
+          order: 2;
+          text-align: center;
+          padding-top: 0; } }
+      .clients .clients__content .clients__description p {
+        font-size: 19px;
+        color: #717171;
+        margin-bottom: 50px; }
+        @media only screen and (max-width: 960px) {
+          .clients .clients__content .clients__description p {
+            font-size: 16px;
+            font-size: 1rem;
+            margin-bottom: 20px; } }
+    .clients .clients__content .clients__list {
+      position: absolute;
+      top: 0;
+      left: 42%;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center; }
+      @media only screen and (max-width: 1200px) {
+        .clients .clients__content .clients__list {
+          left: 31%; } }
+      @media only screen and (max-width: 960px) {
+        .clients .clients__content .clients__list {
+          width: 100%;
+          order: 1;
+          position: relative;
+          left: unset;
+          top: unset;
+          margin-bottom: 40px; } }
+      @media only screen and (max-width: 660px) {
+        .clients .clients__content .clients__list {
+          flex-wrap: wrap;
+          justify-content: center; } }
+      .clients .clients__content .clients__list .clients__user {
+        width: 300px;
+        padding: 40px 20px 50px 45px;
+        margin: 0 20px;
+        border-radius: 20px;
+        box-shadow: 15px 0 82px rgba(180, 180, 180, 0.25); }
+        @media only screen and (max-width: 960px) {
+          .clients .clients__content .clients__list .clients__user {
+            padding: 20px 20px 40px 20px; }
+            .clients .clients__content .clients__list .clients__user:first-child {
+              margin-left: 0; }
+            .clients .clients__content .clients__list .clients__user:last-child {
+              margin-right: 0; } }
+        @media only screen and (max-width: 660px) {
+          .clients .clients__content .clients__list .clients__user {
+            width: calc(50% - 20px);
+            margin-bottom: 40px; }
+            .clients .clients__content .clients__list .clients__user:nth-child(2) {
+              margin-right: 0; }
+            .clients .clients__content .clients__list .clients__user:last-child {
+              margin-left: 0;
+              margin-bottom: 0; } }
+        @media only screen and (max-width: 480px) {
+          .clients .clients__content .clients__list .clients__user {
+            width: 100%;
+            margin: 0 0 40px 0; } }
+        .clients .clients__content .clients__list .clients__user img {
+          display: block;
+          margin-bottom: 20px; }
+        .clients .clients__content .clients__list .clients__user h4 {
+          font-size: 16px;
+          font-weight: 700;
+          background-image: -webkit-linear-gradient(#ff5f6d, #ffc371);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-bottom: 20px; }
+        .clients .clients__content .clients__list .clients__user p {
+          font-size: 20px;
+          color: #717171; }
+          @media only screen and (max-width: 960px) {
+            .clients .clients__content .clients__list .clients__user p {
+              font-size: 16px;
+              font-size: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */

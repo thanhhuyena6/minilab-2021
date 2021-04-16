@@ -18,7 +18,7 @@
   .banner-background {
     position: relative;
     img {
-      display: inline-block;
+      display: block;
       position: absolute;
       top: 0;
       right: 0;
@@ -111,11 +111,19 @@
           position: absolute;
           &:first-child {
             right: 100%;
-            bottom: 116%;
+            bottom: 97%;
+            @media #{$info-phone-horizontal} {
+              bottom: 104%;
+            }
           }
           &:nth-child(2) {
             left: 0;
             bottom: 109%;
+            @media #{$info-phone-horizontal} {
+              bottom: 85%;
+              left: unset;
+              right: 100%;
+            }
           }
         }
       }
