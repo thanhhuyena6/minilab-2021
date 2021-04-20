@@ -5898,9 +5898,12 @@ footer {
         .work .container .work__video .work__plays a {
           display: block; }
           .work .container .work__video .work__plays a i {
-            color: #fff; }
+            color: #fff;
+            transition: all .3s ease-in-out; }
             .work .container .work__video .work__plays a i:before {
               font-size: 58px; }
+          .work .container .work__video .work__plays a:hover i {
+            color: #000; }
     .work .container .work__content {
       width: 38%;
       padding-left: 20px;

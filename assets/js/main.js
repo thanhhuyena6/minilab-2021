@@ -29,6 +29,6 @@ $(document).ready(function(){
 // AOS scroll
 AOS.init({
     duration: 1200,
-    offet: 200,
+    offet: 120,
     once: true,
 })

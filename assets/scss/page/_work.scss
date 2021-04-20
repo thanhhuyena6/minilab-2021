@@ -51,8 +51,14 @@
           display: block;
           i {
             color: $color-default-lightest;
+            transition: all .3s ease-in-out;
             &:before {
               font-size: 58px;
+            }
+          }
+          &:hover {
+            i {
+              color: $color-default-darkest;
             }
           }
         }
