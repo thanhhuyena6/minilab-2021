@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/vendor/aos.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -29,19 +30,20 @@
 <![endif]-->
 
 
-<header>
+<header id="header">
     <div class="container">
         <h1>
-            <a href="#" target="_blank">
+            <a href="#banner">
                 <img src="./assets/img/logo.png" alt="logo">
             </a>
         </h1>
         <nav class="nav">
-                <a href="#" target="_blank">Home</a>
-                <a href="#" target="_blank">About us</a>
-                <a href="#" target="_blank">Our Project</a>
-                <a href="#" target="_blank">Contact us</a>
-                <a href="#" target="_blank"><i class="fas fa-search"></i></a>
+                <a href="#banner">Home</a>
+                <a href="#marketing">About us</a>
+                <a href="#work">Our Project</a>
+                <a href="#footer">Contact us</a>
+                <i class="fas fa-search"></i>
+
         </nav>
         <div class="burger">
             <div class="line1"></div>
@@ -51,13 +53,13 @@
     </div>
 </header>
 <main>
-    <section class="banner">
-       <div class="banner-background">
+    <section class="banner" id="banner" data-aos="fade-up-right">
+       <div class="banner__background">
            <img src="./assets/img/bg-header.svg" alt="background-header">
        </div>
         <div class="container">
-            <div class="banner-item">
-                <div class="banner-content">
+            <div class="banner__item">
+                <div class="banner__content">
                     <img src="./assets/img/banner-1.png" alt="banner-icon">
                     <img src="./assets/img/banner-2.png" alt="banner-icon">
                     <h2>
@@ -68,16 +70,16 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <button class="button" type="button">See More</button>
                 </div>
-                <div class="banner-image">
+                <div class="banner__image">
                     <img src="./assets/img/banner-3.png" alt="banner-image">
                 </div>
             </div>
         </div>
     </section>
-    <section class="marketing">
+    <section class="marketing" id="marketing" data-aos="fade-up">
         <div class="container">
             <div class="marketing__content">
-                <h2>We’re Creative Digital Agency & Marketing Expert</h2>
+                <h2>We’re Creative Digital Agency <br> & Marketing Expert</h2>
             </div>
             <div class="marketing__list">
                 <div class="marketing__item">
@@ -112,7 +114,7 @@
         </div>
         <img class="marketing__background" src="./assets/img/bg-body-left.png" alt="picture-background">
     </section>
-    <section class="work">
+    <section class="work" id="work" data-aos="zoom-in">
         <div class="container">
             <div class="work__video">
                 <img src="./assets/img/work-1.png" alt="work-picture">
@@ -126,12 +128,12 @@
                     the industry's standard dummy text ever since.</p>
                 <button class="button" type="button">Watch More</button>
             </div>
-            <img class="work__image image-1" src="./assets/img/banner-1.png" alt="work-background-small">
-            <img class="work__image image-2" src="./assets/img/banner-1.png" alt="work-background-small">
+            <img class="work__image image--1" src="./assets/img/banner-1.png" alt="work-background-small">
+            <img class="work__image image--2" src="./assets/img/banner-1.png" alt="work-background-small">
         </div>
-        <img class="work__bg-image" src="./assets/img/bg-body-right.png" alt="work-background">
+        <img class="work__background" src="./assets/img/bg-body-right.png" alt="work-background">
     </section>
-    <section class="clients">
+    <section class="clients" data-aos="flip-left">
         <div class="container">
             <h2>Some Awesome Words By Our CLients</h2>
             <div class="clients__content">
@@ -160,12 +162,106 @@
             </div>
         </div>
     </section>
+    <section class="resources" data-aos="fade-up-right">
+        <div class="container">
+            <h2>Update Your Marketing Resources</h2>
+            <form>
+                <input type="text" placeholder="Enter Your Mail">
+                <button type="submit" class="button">Sign in</button>
+            </form>
+            <img class="resources__image" src="./assets/img/banner-1.png" alt="resources-background">
+        </div>
+        <img class="resources__background background--1" src="./assets/img/banner-1.png" alt="resources-background">
+        <img class="resources__background background--2" src="./assets/img/bg-resources-left.png" alt="resources-background">
+        <img class="resources__background background--3" src="./assets/img/bg-resources-right.png" alt="resources-background">
+    </section>
 </main>
-<footer></footer>
+<footer id="footer" data-aos="flip-right">
+    <div class="container">
+        <a class="footer__logo" href="#banner">
+            <img src="./assets/img/logo-1.png" alt="logo">
+        </a>
+        <div class="footer__list">
+            <div class="footer__item">
+                <h4>FEATURES</h4>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">Live chat</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Email Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">User Analytics</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Marketing </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Automation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4>RESOURCES</h4>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">Watch A Demo</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Docs</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Integrations & API</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">IOS And Android</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Apps</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">About</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Customers</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">CareersI</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4>CONTACT</h4>
+                <a class="footer__gmail" href="mailto:support@domain.com">support@domain.com</a>
+                <div class="footer__icon">
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/footer-1.png" alt="icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/footer-2.png" alt="icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/footer-3.png" alt="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="assets/js/vendor/aos.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

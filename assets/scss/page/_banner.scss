@@ -1,6 +1,6 @@
 .banner {
-  height: 930px;
-  margin-bottom: 240px;
+  height: 935px;
+  margin-bottom: 225px;
   @media #{$info-tablet-horizontal} {
     height: 800px;
     margin-bottom: 100px;
@@ -11,11 +11,9 @@
   }
   @media #{$info-phone-horizontal} {
     height: 600px;
+    margin-bottom: 400px;
   }
-  @media #{$info-phone-vertical} {
-    margin-bottom: 320px;
-  }
-  .banner-background {
+  .banner__background {
     position: relative;
     img {
       display: block;
@@ -38,7 +36,7 @@
     height: 100%;
     position: relative;
     z-index: 1;
-    .banner-item {
+    .banner__item {
       @include flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -49,16 +47,16 @@
       @media #{$info-phone} {
         align-items: flex-start;
       }
-      @media #{$info-phone-vertical} {
+      @media #{$info-phone-horizontal} {
         flex-wrap: wrap;
         bottom: unset;
         top: 90px;
       }
-      .banner-content {
+      .banner__content {
         width: 55%;
         position: relative;
         padding-right: 40px;
-        @media #{$info-phone-vertical} {
+        @media #{$info-phone-horizontal} {
           width: 100%;
           order: 2;
           @include flex;
@@ -79,7 +77,7 @@
           span {
             display: block;
             margin-bottom: 20px;
-            @media #{$info-phone-vertical} {
+            @media #{$info-phone-horizontal} {
               display: inline-block;
             }
           }
@@ -87,7 +85,7 @@
         h3 {
           font-weight: 700;
           color: $color-default-dark;
-          margin-bottom: 30px;
+          margin-bottom: 35px;
           @media #{$info-phone-vertical} {
             margin-bottom: 20px;
           }
@@ -97,11 +95,11 @@
           padding-right: 130px;
           font-weight: 300;
           color: $color-primary;
-          margin-bottom: 40px;
+          margin-bottom: 45px;
           @media #{$info-tablet-horizontal} {
             padding-right: 0;
           }
-          @media #{$info-phone-vertical} {
+          @media #{$info-phone-horizontal} {
             text-align: center;
             margin-bottom: 20px;
           }
@@ -111,14 +109,15 @@
           position: absolute;
           &:first-child {
             right: 100%;
-            bottom: 97%;
+            //bottom: 97%;
+            bottom: 114%;
             @media #{$info-phone-horizontal} {
               bottom: 104%;
             }
           }
           &:nth-child(2) {
             left: 0;
-            bottom: 109%;
+            bottom: 107%;
             @media #{$info-phone-horizontal} {
               bottom: 85%;
               left: unset;
@@ -127,17 +126,18 @@
           }
         }
       }
-      .banner-image {
+      .banner__image {
         width: 45%;
-        @media #{$info-phone-vertical} {
+        @media #{$info-phone-horizontal} {
           width: 100%;
           order: 1;
-          margin-bottom: 100px;
+          margin-bottom: 60px;
         }
         img {
           display: block;
-          @media #{$info-phone-vertical} {
-            height: 400px;
+          @media #{$info-phone-horizontal} {
+            width: initial;
+            height: 500px;
             margin: 0 auto;
           }
         }

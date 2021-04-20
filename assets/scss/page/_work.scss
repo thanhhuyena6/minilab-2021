@@ -1,6 +1,6 @@
 .work {
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 225px;
   @media #{$info-laptop-large} {
     overflow: hidden;
   }
@@ -25,7 +25,7 @@
     .work__video {
       position: relative;
       margin-left: 45px;
-      box-shadow: 15px 0 82px rgba(180, 180, 180, 0.25);
+      box-shadow: 15px 15px 82px 0 rgba(180, 180, 180, 0.25);
       @media #{$info-tablet-horizontal} {
         margin-left: 0;
         width: 50%;
@@ -101,13 +101,13 @@
     .work__image {
       position: absolute;
     }
-    .image-1 {
+    .image--1 {
       top: 0;
       left: -35px;
     }
-    .image-2 {
+    .image--2 {
       transform: rotate(-5deg);
-      right: -4px;
+      right: -6px;
       bottom: -40px;
       @media #{$info-laptop-large} {
         bottom: 0;
@@ -117,7 +117,7 @@
       }
     }
   }
-  .work__bg-image {
+  .work__background {
     display: block;
     position: absolute;
     right: 0;
