@@ -47,6 +47,14 @@
         border-radius: 50%;
         @include center-inside-element();
         background-image: linear-gradient(to bottom right, $background-button-end, $background-button-start);
+        @media #{$info-phone} {
+          width: 100px;
+          height: 100px;
+        }
+        @media #{$info-phone-small} {
+          width: 150px;
+          height: 150px;
+        }
         a {
           display: block;
           i {
@@ -54,9 +62,15 @@
             transition: all .3s ease-in-out;
             &:before {
               font-size: 58px;
+              @media #{$info-phone} {
+                font-size: 40px;
+              }
+              @media #{$info-phone-small} {
+                font-size: 58px;
+              }
             }
           }
-          &:hover {
+          &:hover, &:focus {
             i {
               color: $color-default-darkest;
             }
