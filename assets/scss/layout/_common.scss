@@ -1,0 +1,60 @@
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul, ol, p {
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.button {
+  position: relative;
+  width: auto;
+  border: none;
+  padding: 15px 58px;
+  line-height: 1;
+  color: $color-default-lightest;
+  background-image: linear-gradient(to right,$background-button-start, $background-button-end);
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover, &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $color-default-darkest;
+  }
+}
+
+.sticky {
+  background: $color-default-lighter;
+  opacity: 0.8;
+  top: 0;
+  padding: 20px 0;
+}

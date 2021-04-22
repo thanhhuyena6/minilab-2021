@@ -1,0 +1,148 @@
+.banner {
+  height: 935px;
+  margin-bottom: 225px;
+  @media #{$info-tablet-horizontal} {
+    height: 800px;
+    margin-bottom: 100px;
+  }
+  @media #{$info-phone} {
+    height: 650px;
+    margin-bottom: 60px;
+  }
+  @media #{$info-phone-horizontal} {
+    height: 600px;
+    margin-bottom: 400px;
+  }
+  .banner__background {
+    position: relative;
+    img {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      @media #{$info-tablet-horizontal} {
+        width: 600px;
+      }
+      @media #{$info-phone} {
+        width: 320px;
+      }
+      @media #{$info-phone-vertical} {
+        width: 200px;
+      }
+    }
+  }
+  .container {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    .banner__item {
+      @include flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+      left: 15px;
+      @media #{$info-phone} {
+        align-items: flex-start;
+      }
+      @media #{$info-phone-horizontal} {
+        flex-wrap: wrap;
+        bottom: unset;
+        top: 90px;
+      }
+      .banner__content {
+        width: 55%;
+        position: relative;
+        padding-right: 40px;
+        @media #{$info-phone-horizontal} {
+          width: 100%;
+          order: 2;
+          @include flex;
+          flex-direction: column;
+          align-items: center;
+          padding-right: 0;
+        }
+        h2, h3 {
+          font-size: 80px;
+          line-height: 1;
+          @media #{$info-tablet-horizontal} {
+            @include font-size(60px);
+          }
+        }
+        h2 {
+          font-weight: 600;
+          color: $color-default-darkest;
+          span {
+            display: block;
+            margin-bottom: 20px;
+            @media #{$info-phone-horizontal} {
+              display: inline-block;
+            }
+          }
+        }
+        h3 {
+          font-weight: 700;
+          color: $color-default-dark;
+          margin-bottom: 35px;
+          @media #{$info-phone-vertical} {
+            margin-bottom: 20px;
+          }
+        }
+        p {
+          font-size: 23px;
+          padding-right: 130px;
+          font-weight: 300;
+          color: $color-primary;
+          margin-bottom: 45px;
+          @media #{$info-tablet-horizontal} {
+            padding-right: 0;
+          }
+          @media #{$info-phone-horizontal} {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+        }
+        img {
+          display: block;
+          position: absolute;
+          &:first-child {
+            right: 100%;
+            //bottom: 97%;
+            bottom: 114%;
+            @media #{$info-phone-horizontal} {
+              bottom: 104%;
+            }
+          }
+          &:nth-child(2) {
+            left: 0;
+            bottom: 107%;
+            @media #{$info-phone-horizontal} {
+              bottom: 85%;
+              left: unset;
+              right: 100%;
+            }
+          }
+        }
+      }
+      .banner__image {
+        width: 45%;
+        @media #{$info-phone-horizontal} {
+          width: 100%;
+          order: 1;
+          margin-bottom: 60px;
+        }
+        img {
+          display: block;
+          @media #{$info-phone-horizontal} {
+            width: initial;
+            height: 500px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+}

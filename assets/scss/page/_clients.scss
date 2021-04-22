@@ -1,0 +1,137 @@
+.clients {
+  overflow: hidden;
+  .container {
+    margin-bottom: 275px;
+    @media #{$info-tablet-horizontal} {
+      margin-bottom: 100px;
+    }
+    @media #{$info-phone} {
+      margin-bottom: 60px;
+    }
+    h2 {
+      margin: 0 auto 110px;
+      max-width: 775px;
+      font-size: 60px;
+      font-weight: 700;
+      text-align: center;
+      @media #{$info-tablet-horizontal} {
+        margin-bottom: 100px;
+      }
+      @media #{$info-phone} {
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+      @media #{$info-phone-vertical} {
+        font-size: 30px;
+      }
+    }
+    .clients__content {
+      @include flex;
+      position: relative;
+      @media #{$info-tablet-vertical} {
+        flex-wrap: wrap;
+      }
+      .clients__description {
+        width: 39%;
+        padding-top: 35px;
+        @media #{$info-laptop-small} {
+          width: 30%;
+        }
+        @media #{$info-tablet-vertical} {
+          width: 100%;
+          order: 2;
+          text-align: center;
+          padding-top: 0;
+        }
+        p {
+          font-size: 19px;
+          color: $color-primary;
+          margin-bottom: 50px;
+          @media #{$info-tablet-vertical} {
+            @include font-size(16px);
+            margin-bottom: 20px;
+          }
+        }
+        .button {
+          padding: 15px 45px;
+        }
+      }
+      .clients__list {
+        position: absolute;
+        top: 0;
+        left: 42%;
+        @include flex;
+        align-items: center;
+        @media #{$info-laptop-small} {
+          left: 31%;
+        }
+        @media #{$info-tablet-horizontal} {
+          margin-left: 20px;
+        }
+        @media #{$info-tablet-vertical} {
+          width: 100%;
+          order: 1;
+          position: relative;
+          left: unset;
+          top: unset;
+          margin-left: 0;
+          margin-bottom: 40px;
+        }
+        @media #{$info-phone-horizontal} {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .clients__user {
+          width: 300px;
+          padding: 40px 20px 40px 45px;
+          margin: 0 20px;
+          border-radius: 20px;
+          box-shadow: 15px 15px 82px 0 rgba(180,180,180,0.25);
+          @media #{$info-tablet-vertical} {
+            padding: 20px 20px 40px 20px;
+            &:first-child {
+              margin-left: 0;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          @media #{$info-phone-horizontal} {
+            width: calc(50% - 20px);
+            margin-bottom: 40px;
+            &:nth-child(2) {
+              margin-right: 0;
+            }
+            &:last-child {
+              margin-left: 0;
+              margin-bottom: 0;
+            }
+          }
+          @media #{$info-phone-vertical} {
+            width: 100%;
+            margin: 0 0 40px 0;
+          }
+          img {
+            display: block;
+            margin-bottom: 20px;
+          }
+          h4 {
+            font-size: 16px;
+            font-weight: 700;
+            background-image: -webkit-linear-gradient($background-button-end,$background-button-start);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 20px;
+            color: $color-primary;
+            @media #{$info-tablet-vertical} {
+              @include font-size(16px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
